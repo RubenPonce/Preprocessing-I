@@ -185,11 +185,11 @@ header nav a {
 .main-headers {
   font-family: 'Abril Fatface', cursive;
   display: flex;
+  flex-direction: column;
   width: 90%;
   margin: 0 auto;
   justify-content: space-between;
   align-content: center;
-  flex-direction: column;
   background: #fff;
   height: 40%;
   padding-bottom: 40px;
@@ -294,4 +294,9 @@ header nav a {
   margin-top: 10px;
   font-size: 1.4rem;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h4 {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 20px;
 }
