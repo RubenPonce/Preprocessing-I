@@ -229,6 +229,7 @@ header nav a {
 @media (max-width: 835px) {
   .main-headers a {
     width: 20%;
+    align-self: center;
   }
 }
 @media (max-width: 500px) {
