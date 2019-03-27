@@ -118,14 +118,18 @@ header{
 	background: @alto;
 	height: 40%;
 	padding-bottom: 40px;
-	
 	border-bottom: 1px solid #000;
+	@media (max-width: 500px) {
+		align-content: center;
+		text-align: center;
+		width: 90%;
+	}
 	h1{
 		font-size: 2.8rem;
 		font-weight: 500;
-		em{
-			font-weight: 100;
-		}//em
+		@media (max-width: 500px) {
+			font-size: 2.6rem;
+		}
 	}//h1
 	h2{
 		font-size: 1.8rem;
@@ -157,10 +161,7 @@ header{
 			width: 80%;
 		}
 	}//a
-	@media (max-width: 500px) {
-		align-content: center;
-		width: 90%;
-	}
+	
 }//main-headers
 
 .main-content{
@@ -176,6 +177,7 @@ header{
 		@media (max-width: 500px){
 			margin-top: 20px;
 			width: 90%;
+			text-align: center;
 		}
 		
 		h2{

@@ -194,12 +194,21 @@ header nav a {
   padding-bottom: 40px;
   border-bottom: 1px solid #000;
 }
+@media (max-width: 500px) {
+  .main-headers {
+    align-content: center;
+    text-align: center;
+    width: 90%;
+  }
+}
 .main-headers h1 {
   font-size: 2.8rem;
   font-weight: 500;
 }
-.main-headers h1 em {
-  font-weight: 100;
+@media (max-width: 500px) {
+  .main-headers h1 {
+    font-size: 2.6rem;
+  }
 }
 .main-headers h2 {
   font-size: 1.8rem;
@@ -237,12 +246,6 @@ header nav a {
     width: 80%;
   }
 }
-@media (max-width: 500px) {
-  .main-headers {
-    align-content: center;
-    width: 90%;
-  }
-}
 .main-content {
   display: flex;
   justify-content: space-between;
@@ -258,6 +261,7 @@ header nav a {
   .main-content .sub-content {
     margin-top: 20px;
     width: 90%;
+    text-align: center;
   }
 }
 .main-content .sub-content h2 {
