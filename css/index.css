@@ -134,10 +134,26 @@ html,
 body {
   height: 100%;
   font-size: 62.5%;
+  background: #f2f2f2;
+}
+.container {
+  background: #fff;
+  -webkit-box-shadow: 0px -1px 27px -15px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px -1px 27px -15px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px -1px 27px -15px rgba(0, 0, 0, 0.75);
+  height: 100%;
+  overflow: scroll;
+  margin: 5% 5% 0 5%;
 }
 header {
-  background: #fff;
   height: 40px;
+  margin-right: 5%;
+}
+@media (max-width: 500px) {
+  header {
+    height: 35%;
+    margin: 0px;
+  }
 }
 header nav {
   display: flex;
@@ -145,22 +161,38 @@ header nav {
   align-items: center;
   align-content: center;
 }
+@media (max-width: 500px) {
+  header nav {
+    flex-direction: column;
+    background: #ccc;
+  }
+}
 header nav a {
   color: black;
   font-size: 1.6rem;
-  margin: 0px 20px;
+  margin: 0px 0px 0px 40px;
+}
+@media (max-width: 500px) {
+  header nav a {
+    width: 100%;
+    text-align: center;
+    margin: 0 0 0 0;
+    border: 1.3px solid black;
+    padding: 8px 0;
+    margin-top: 0.9px;
+  }
 }
 .main-headers {
   display: flex;
   width: 90%;
   margin: 0 auto;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-content: center;
   flex-direction: column;
-  background: #DEDCDC;
-  padding: 2%;
-  border-bottom: 2px solid #000;
+  background: #fff;
   height: 40%;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #000;
 }
 .main-headers h1 {
   font-size: 2.8rem;
@@ -170,8 +202,14 @@ header nav a {
   font-weight: 100;
 }
 .main-headers h2 {
-  font-size: 1.9rem;
-  font-weight: 400;
+  font-size: 1.8rem;
+  font-weight: 300;
+  width: 40%;
+}
+@media (max-width: 500px) {
+  .main-headers h2 {
+    width: 80%;
+  }
 }
 .main-headers a {
   font-size: 1.4rem;
@@ -188,18 +226,48 @@ header nav a {
   border: 1px solid #e1d27b;
   color: #ccc;
 }
+@media (max-width: 835px) {
+  .main-headers a {
+    width: 20%;
+  }
+}
+@media (max-width: 500px) {
+  .main-headers a {
+    width: 80%;
+  }
+}
+@media (max-width: 500px) {
+  .main-headers {
+    align-content: center;
+    width: 90%;
+  }
+}
 .main-content {
-  display: inline-flex;
-  justify-content: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 5%;
   font-size: 1.7rem;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 .main-content .sub-content {
   width: 45%;
+  background: #fff;
 }
-.main-content .sub-content h3 {
+@media (max-width: 500px) {
+  .main-content .sub-content {
+    margin-top: 20px;
+    width: 90%;
+  }
+}
+.main-content .sub-content h2 {
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 2.5rem;
+}
+@media (max-width: 500px) {
+  .main-content {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
 }
 .bottom-content {
   margin: 5%;
@@ -216,6 +284,7 @@ header nav a {
   font-size: 1.7rem;
 }
 .bottom-content .text-content p {
+  margin-top: 10px;
   font-size: 1.4rem;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
