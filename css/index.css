@@ -143,6 +143,7 @@ body {
   box-shadow: 0px -1px 27px -15px rgba(0, 0, 0, 0.75);
   height: 100%;
   overflow: scroll;
+  scroll-behavior: smooth;
   /* Track */
   /* Handle */
   /* Handle on hover */
@@ -158,7 +159,7 @@ body {
   background: #1e6eb5;
 }
 .container::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #5389ce;
 }
 header {
   height: 40px;
